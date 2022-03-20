@@ -16,12 +16,31 @@ import { Server, Socket,  } from "socket.io";
 // user: root
 // password: root
 
+
+// AWS configuration
+// mysql
+// database name: change_your_mind
+// my_db: name, socket, room, room_id (varchar) 
+// my_db_exit: name, socket, room_name (varchar)
+// port: 3306
+// endpoint public: ls-eea22ac767ce1f4dd5f49f5390e1bad16a74196c.cwlpvgtum6qs.eu-west-2.rds.amazonaws.com
+// user: root
+// password: ChangeYourMind1!
+
 const mysql = require('mysql')
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   port: '8889',
+//   user: 'root',
+//   password: 'root',
+//   database: 'change_your_mind'
+// })
+
 const connection = mysql.createConnection({
-  host: 'localhost',
-  port: '8889',
+  host: 'ls-eea22ac767ce1f4dd5f49f5390e1bad16a74196c.cwlpvgtum6qs.eu-west-2.rds.amazonaws.com',
+  port: '3306',
   user: 'root',
-  password: 'root',
+  password: 'ChangeYourMind1!',
   database: 'change_your_mind'
 })
 
