@@ -8,11 +8,19 @@ import {
 import { Server, Socket } from "socket.io";
 
 const mysql = require('mysql')
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   port: '8889',
+//   user: 'root',
+//   password: 'root',
+//   database: 'change_your_mind'
+// })
+
 const connection = mysql.createConnection({
-  host: 'localhost',
-  port: '8889',
+  host: 'ls-eea22ac767ce1f4dd5f49f5390e1bad16a74196c.cwlpvgtum6qs.eu-west-2.rds.amazonaws.com',
+  port: '3306',
   user: 'root',
-  password: 'root',
+  password: 'ChangeYourMind1!',
   database: 'change_your_mind'
 })
 
