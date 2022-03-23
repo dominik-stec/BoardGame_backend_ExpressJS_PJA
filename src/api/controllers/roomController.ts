@@ -607,7 +607,7 @@ setTimeout(() => {
   if(fourRoomSocketsArrays.length > 0) deleteAfterJoin(fourRoomSocketsArrays);
   if(fiveRoomSocketsArrays.length > 0) deleteAfterJoin(fiveRoomSocketsArrays);
   if(sixRoomSocketsArrays.length > 0) deleteAfterJoin(sixRoomSocketsArrays);
-}, 6000)
+}, 4000)
 
 socket.once('disconnect', function(){
 
