@@ -639,13 +639,6 @@ setTimeout( () => {
           console.log(`Player: ${exitedName} left game`)
           socket.to(exitedRoom).emit('user_leave', exitedName)
         })
-    
-    let deletePermanentlySQL = `DELETE FROM my_db WHERE socket = '${socket.id}'`;
-        
-        connection.query(deletePermanentlySQL, function (err, result) {
-          if (err) throw err;
-          console.log(`Player: ${exitedName} permanently delete from main db`)
-        })
   
       })
 
@@ -653,6 +646,15 @@ setTimeout( () => {
       socket.disconnect()
 
 }, 500)
+  
+  
+      let deletePermanentlySQL = `DELETE FROM my_db WHERE socket = '${socket.id}'`;
+        
+        connection.query(deletePermanentlySQL, function (err, result) {
+          if (err) throw err;
+          console.log(`Player permanently delete from main db`)
+        })
+  
 });
 
 setTimeout(() => {
