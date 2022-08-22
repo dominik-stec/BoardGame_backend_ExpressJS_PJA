@@ -79,13 +79,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> In this project I used Nodemon build tool with Node.js framework and Node Package Manager for build and deploy backend for web application. I used Express framework for implement functionality.</p>
+<p> In this project I used Nodemon build tool with Node.js framework and Node Package Manager for build and deploy backend for web application. I used Express framework for implement functionality. It is possible to build project by use yarn build tools</p>
 
 ### Built With
 
 This project use technology below.
-* [![robotframework][robotframework-shield]][robotframework-url]
-* [![python][python-shield]][python-url]
+* [![node][node-shield]][node-url]
+* [![express][express-shield]][express-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -95,77 +95,49 @@ This is instructions on setting up this project locally.
 
 ### Prerequisites
 
-Robot framework web driver for automatic graphics interface tests use cases is need. <br />
-Python with package intaller pip is need. <br />
-Google Chrome browser for run interface tests is need. <br />
-
-* Robot framework
-   ```sh
-  pip install robotframework
-  ```
-
-* Selenium web driver
-   ```sh
-  pip install selenium
-  pip install robotframework-seleniumlibrary
-  ```
+Node.js JavaScript framework for build project is need. <br />
+Node.js Package Manager 'npm' for maintain external dependencies is need. <br />
+Express.js JavaScript framework for build backend solutions is need. <br />
 
 ### Installation
 
-1. Install Chrome web driver
-
-For Ubuntu:
+1. Clone the repo with game backend
    ```sh
-   sudo apt install chromium-chromedriver
+   https://github.com/dccstcc/ChangeYourMindGameBackend.git
    ```
    
-For Debian:
+2. Install nodemon by use npm:
    ```sh
-   sudo apt install chromium-driver
+   npm install -g nodemon
    ```
-   
-For MacOS:
+   or using yarn:   
    ```sh
-   brew install --cask chromedriver
+   yarn global add nodemon
    ```
-   
-2. Navigate to path where your chromedriver file is located
 
-  For example:
+3. Install socket.io library dependency
    ```sh
-   cd /usr/local/Caskroom/chromedriver 
-   ```
-   and run cmd:
-   ```sh
-   xattr -d com.apple.quarantine chromedriver 
-   ```
-   for allow robot to perform tests by use chrome
-
-3. Clone the repo with robot framework tests
-   ```sh
-   https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_7_Robot.git
+   npm install socket-io-server
    ```
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Run robot framework
+Start backend
    ```sh
-   robot Project_Robot_framework
+   npm start
    ```  
 
 
-In Chrome web browser starts automatic tests which execute different cases of operations on graphics user interface for find bugs into user side usage application.
+In terminal we can observe backend events with coordination of frontend part of this game. Backend listen on localhost:9000. Nodemon serve continously work of backend.
    
- <img src="images/test_example.png" width="500"/>
+ <img src="images/npm_start.png" width="500"/>
    
 <!-- [![browser][browser]][browser]
  -->
 
-When tests will end with or without fails we can see tests pass summary into command line.
-
-<img src="images/test_cmd.png" width="500"/>
+<img src="images/localhost.png" width="500"/>
 
 <!-- [![summary][summary]][summary] -->
 
@@ -197,7 +169,7 @@ Contributions are what make the open source community such an amazing place to l
 <!-- LICENSE -->
 ## License
 
-This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder. Because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
+This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
 
 
 
@@ -210,7 +182,7 @@ Dominik Stec - dccstcc@gmail.com
 
 Project URL: 
 <br />
-`https://github.com/dccstcc/TAU_PJATK_practice.git`
+`https://github.com/dccstcc/ChangeYourMindGameBackend.git`
 
 
 
@@ -268,6 +240,11 @@ Project URL:
 [robotframework-url]: https://robotframework.org/
 [python-shield]: https://img.shields.io/badge/-Python-yellow
 [python-url]: https://www.python.org/
+
+[node-shield]: https://img.shields.io/badge/-Node-green
+[node-url]: https://nodejs.org/en/
+[express-shield]: https://img.shields.io/badge/-Express-blue
+[express-url]: https://expressjs.com/
 
 [server_run]: images/server_run.png 
 [client_run]: images/client_run.png
