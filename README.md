@@ -224,15 +224,15 @@ In coordination with frontend application we can see bottom logs in command line
 
 Logs after register players:
 
-<img src="images/backend/login_cmd.png"  width:"200"/>
+<img src="images/backend/login_cmd.png"  width:"200" />
 
 Backend logs in working game:
 
-<img src="images/backend/game_cmd.png"  width:"200"/>
+<img src="images/backend/game_cmd.png"  width:"200" />
 
 Database in working game:
 
-<img src="images/backend/database_work.png"  width:"200"/>
+<img src="images/backend/database_work.png"  width:"200" />
 
 
 <!-- ROADMAP 
