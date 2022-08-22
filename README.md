@@ -30,12 +30,12 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">TAU_PJATK_practice</h2>
+  <h2 align="center">ChangeYourMindGameBackend</h2>
 
   <p align="center">
-    <h3> Testing technology subject in PJATK </h3>
+    <h3> This project is a backend for board game. I made digital game based on reality game board. It was work work for my study practice. This project is dedicated for local government 'Self-Help Center' Institution where i realised my study practice.  </h3>
     <br />
-    <a href="https://github.com/dccstcc/TAU_PJATK_practice/tree/master/lab_7_Robot/Project_Robot_framework"><strong>» go to CODE »</strong></a>
+    <a href="https://github.com/dccstcc/ChangeYourMindGameBackend"><strong>» go to CODE »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -79,7 +79,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> In this project I used Robot framework with web driver for test graphic user interface in web application. </p>
+<p> In this project I used Nodemon build tool with Node.js framework and Node Package Manager for build and deploy backend for web application. I used Express framework for implement functionality.</p>
 
 ### Built With
 
