@@ -86,6 +86,8 @@
 This project use technology below.
 * [![node][node-shield]][node-url]
 * [![express][express-shield]][express-url]
+* [![mysql][mysql-shield]][mysql-url]
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -163,11 +165,6 @@ CREATE TABLE my_db_exit (
     socket varchar(255)
 );
 ```
-
-<br /> 
-<b> Now run database </b`>
-<br />
-<br />
 
 Go to source file at:
 ```sh
@@ -319,8 +316,10 @@ Project URL:
 
 [node-shield]: https://img.shields.io/badge/-Node-green
 [node-url]: https://nodejs.org/en/
-[express-shield]: https://img.shields.io/badge/-Express-blue
+[express-shield]: https://img.shields.io/badge/-Express-white
 [express-url]: https://expressjs.com/
+[mysql-shield]: https://img.shields.io/badge/-MySQL-blue
+[mysql-url]: https://www.mysql.com/
 
 [server_run]: images/server_run.png 
 [client_run]: images/client_run.png
