@@ -165,7 +165,8 @@ CREATE TABLE my_db_exit (
 ```
 
 <br /> 
-Now run database 
+<b> Now run database </b`>
+<br />
 <br />
 
 Go to source file at:
