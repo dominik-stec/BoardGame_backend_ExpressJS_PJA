@@ -197,7 +197,7 @@ Do not change variable:
 
 <br />
 
-<img src="images/backend/database.png" width="500"/>
+<img src="images/backend/database.png" width="250"/>
 
 
 Start backend
@@ -208,12 +208,12 @@ Start backend
 
 In terminal we can observe backend events with coordination of frontend part of this game. Backend listen on localhost:9000. Nodemon serve continously work of backend.
    
- <img src="images/npm_start.png" width="500"/>
+ <img src="images/npm_start.png" width="250"/>
    
 <!-- [![browser][browser]][browser]
  -->
 
-<img src="images/localhost.png" width="500"/>
+<img src="images/localhost.png" width="250"/>
 
 <!-- [![summary][summary]][summary] -->
 
@@ -224,15 +224,15 @@ In coordination with frontend application we can see bottom logs in command line
 
 Logs after register players:
 
-<img src="images/backend/login_cmd.png"  width:"200" />
+<img src="images/backend/login_cmd.png"  width="250" />
 
 Backend logs in working game:
 
-<img src="images/backend/game_cmd.png"  width:"200" />
+<img src="images/backend/game_cmd.png"  width="250" />
 
 Database in working game:
 
-<img src="images/backend/database_work.png"  width:"200" />
+<img src="images/backend/database_work.png"  width="250" />
 
 
 <!-- ROADMAP 
