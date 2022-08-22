@@ -103,7 +103,7 @@ Express.js JavaScript framework for build backend solutions is need. <br />
 
 1. Clone the repo with game backend
    ```sh
-   https://github.com/dccstcc/ChangeYourMindGameBackend.git
+   git clone https://github.com/dccstcc/ChangeYourMindGameBackend.git
    ```
    
 2. Install nodemon by use npm:
