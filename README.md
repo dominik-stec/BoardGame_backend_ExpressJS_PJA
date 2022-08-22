@@ -98,6 +98,8 @@ This is instructions on setting up this project locally.
 Node.js JavaScript framework for build project is need. <br />
 Node.js Package Manager 'npm' for maintain external dependencies is need. <br />
 Express.js JavaScript framework for build backend solutions is need. <br />
+<br />
+MySQL database server is need.
 
 ### Installation
 
@@ -119,16 +121,89 @@ Express.js JavaScript framework for build backend solutions is need. <br />
    ```sh
    npm install socket-io-server
    ```
-
+   
+4. Install software which provide MySQL server database: <br />
+example: LAMP - Windows/Linux/Mac
+```sh
+https://bitnami.com/stack/lamp/installer
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+Run MySQL database server and create new connection with properties:
+example:
+```sh
+host: localhost
+port: 8889
+user: root
+password: root
+```
+
+Create database with exactly name:
+```sh
+database: 'change_your_mind'
+```
+
+Create table with exactly columns:
+```sql
+CREATE TABLE my_db (
+    name varchar(255),
+    room varchar(255),
+    room_id varchar(255),
+    socket varchar(255)
+);
+```
+
+Create second table with exactly columns:
+```sql
+CREATE TABLE my_db_exit (
+    name varchar(255),
+    room_name varchar(255),
+    socket varchar(255)
+);
+```
+
+<br /> 
+Now run database 
+<br />
+
+Go to source file at:
+```sh
+https://github.com/dccstcc/ChangeYourMindGameBackend/blob/master/src/api/controllers/gameController.ts
+``` 
+edit gameController.ts in section:
+```javascript
+const connection = mysql.createConnection({
+  host: 'ls-eea22ac767ce1f4dd5f49f5390e1bad16a74196c.cwlpvgtum6qs.eu-west-2.rds.amazonaws.com',
+  port: '3306',
+  user: 'root',
+  password: 'ChangeYourMind1!',
+  database: 'change_your_mind'
+})
+``` 
+and replace variables on to:
+- host: 'localhost'
+- port: '8889'
+- user: 'root'
+- password: 'root'
+
+<br />
+
+according to values existed in running MySQL database.
+
+<br />
+
+Do not change variable:
+- database: 'change_your_mind'
+
+<br />
+
 Start backend
    ```sh
+   cd ChangeYourMindGameBackend
    npm start
    ```  
-
 
 In terminal we can observe backend events with coordination of frontend part of this game. Backend listen on localhost:9000. Nodemon serve continously work of backend.
    
@@ -144,7 +219,7 @@ In terminal we can observe backend events with coordination of frontend part of 
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-
+In coordination with frontend application we can see bottom logs in command line
 
 <!-- ROADMAP 
 ## Roadmap
